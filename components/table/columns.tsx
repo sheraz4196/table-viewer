@@ -1,4 +1,8 @@
+"use client";
 import { ColumnDef } from "@tanstack/react-table";
+import { ArrowUpDown, MoreHorizontal } from "lucide-react";
+import { Button } from "../ui/button";
+
 export type TableValues = {
   model: string;
   msrp: string | null;
@@ -14,7 +18,17 @@ export type TableValues = {
 export const columns: ColumnDef<TableValues>[] = [
   {
     accessorKey: "model",
-    header: "Model",
+    header: ({ column }) => {
+      return (
+        <Button
+          variant="ghost"
+          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+        >
+          Model
+          <ArrowUpDown className="ml-2 h-4 w-4" />
+        </Button>
+      );
+    },
   },
   {
     accessorKey: "msrp",
