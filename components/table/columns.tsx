@@ -62,7 +62,9 @@ export const columns: ColumnDef<TableValues>[] = [
         currency: "USD",
       }).format(msrp);
 
-      return <div className="text-right font-medium">{formatted}</div>;
+      return (
+        <div className="text-right font-medium">{msrp ? formatted : ""}</div>
+      );
     },
   },
 
@@ -76,7 +78,11 @@ export const columns: ColumnDef<TableValues>[] = [
         currency: "USD",
       }).format(leaveCredit);
 
-      return <div className="text-right font-medium">{formatted}</div>;
+      return (
+        <div className="text-right font-medium">
+          {leaveCredit ? formatted : ""}
+        </div>
+      );
     },
   },
   {
@@ -89,7 +95,11 @@ export const columns: ColumnDef<TableValues>[] = [
         currency: "USD",
       }).format(residual);
 
-      return <div className="text-right font-medium">{formatted}</div>;
+      return (
+        <div className="text-right font-medium">
+          {residual ? formatted : ""}
+        </div>
+      );
     },
   },
   {
@@ -102,7 +112,11 @@ export const columns: ColumnDef<TableValues>[] = [
         currency: "USD",
       }).format(moneyFactor);
 
-      return <div className="text-right font-medium">{formatted}</div>;
+      return (
+        <div className="text-right font-medium">
+          {moneyFactor ? formatted : ""}
+        </div>
+      );
     },
   },
   {
@@ -115,7 +129,11 @@ export const columns: ColumnDef<TableValues>[] = [
         currency: "USD",
       }).format(totalDriveOffs);
 
-      return <div className="text-right font-medium">{formatted}</div>;
+      return (
+        <div className="text-right font-medium">
+          {totalDriveOffs ? formatted : ""}
+        </div>
+      );
     },
   },
   {
@@ -128,7 +146,9 @@ export const columns: ColumnDef<TableValues>[] = [
         currency: "USD",
       }).format(terms);
 
-      return <div className="text-right font-medium">{formatted}</div>;
+      return (
+        <div className="text-right font-medium">{terms ? formatted : ""}</div>
+      );
     },
   },
   {
@@ -141,7 +161,9 @@ export const columns: ColumnDef<TableValues>[] = [
         currency: "USD",
       }).format(noMSDs);
 
-      return <div className="text-right font-medium">{formatted}</div>;
+      return (
+        <div className="text-right font-medium">{noMSDs ? formatted : ""}</div>
+      );
     },
   },
   {
@@ -154,7 +176,9 @@ export const columns: ColumnDef<TableValues>[] = [
         currency: "USD",
       }).format(msds);
 
-      return <div className="text-right font-medium">{formatted}</div>;
+      return (
+        <div className="text-right font-medium">{msds ? formatted : ""}</div>
+      );
     },
   },
 ];

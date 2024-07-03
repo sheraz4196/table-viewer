@@ -1,5 +1,4 @@
 import next from "next";
-import axios from "axios";
 import express from "express";
 import http from "http";
 const dev = process.env.NODE_ENV !== "production";
@@ -15,6 +14,5 @@ app.prepare().then(async () => {
   const PORT = process.env.PORT || 3000;
   httpServer.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
-    runScheduler();
   });
 });

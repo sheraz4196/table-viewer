@@ -4,7 +4,10 @@ import { getMonthlyData } from "@/lib/new-data";
 import cron from "node-cron";
 import { transformCarData } from "@/lib/utils";
 export default async function Home() {
-  cron.schedule("* * * * *", getMonthlyData);
+  cron.schedule("* * * * *", async function () {
+    console.log("Hello, I am running.....");
+    await getMonthlyData();
+  });
   const data = await getMonthlyData();
   const formattedData = transformCarData(data);
   return (
