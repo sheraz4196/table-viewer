@@ -26,7 +26,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "lib/sheets-data.js"
+    "lib/sheets-data.js",
+    "server/server.js"
   ],
   "exclude": ["node_modules"]
 }
