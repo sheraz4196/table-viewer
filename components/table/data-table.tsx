@@ -44,7 +44,7 @@ export default function DataTable<TData, TValue>({
   const [columnVisibility, setColumnVisibility] =
     React.useState<VisibilityState>({});
   const [rowSelection, setRowSelection] = React.useState({});
-
+  console.log("Hello I am Formatted", data[4]);
   const table = useReactTable({
     data,
     columns,

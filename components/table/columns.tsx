@@ -56,31 +56,19 @@ export const columns: ColumnDef<TableValues>[] = [
     accessorKey: "msrp",
     header: () => <div className="text-right">MSRP</div>,
     cell: ({ row }) => {
-      const msrp = parseFloat(row.getValue("msrp"));
-      const formatted = new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD",
-      }).format(msrp);
-
       return (
-        <div className="text-right font-medium">{msrp ? formatted : ""}</div>
+        <div className="text-right font-medium">{row.getValue("msrp")}</div>
       );
     },
   },
 
   {
-    accessorKey: "leaveCredit",
+    accessorKey: "leaseCredit",
     header: () => <div className="text-right">Leave Credit</div>,
     cell: ({ row }) => {
-      const leaveCredit = parseFloat(row.getValue("leaveCredit"));
-      const formatted = new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD",
-      }).format(leaveCredit);
-
       return (
         <div className="text-right font-medium">
-          {leaveCredit ? formatted : ""}
+          {row.getValue("leaseCredit")}
         </div>
       );
     },
@@ -89,16 +77,8 @@ export const columns: ColumnDef<TableValues>[] = [
     accessorKey: "residual",
     header: () => <div className="text-right">Residual</div>,
     cell: ({ row }) => {
-      const residual = parseFloat(row.getValue("residual"));
-      const formatted = new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD",
-      }).format(residual);
-
       return (
-        <div className="text-right font-medium">
-          {residual ? formatted : ""}
-        </div>
+        <div className="text-right font-medium">{row.getValue("residual")}</div>
       );
     },
   },
@@ -106,48 +86,30 @@ export const columns: ColumnDef<TableValues>[] = [
     accessorKey: "moneyFactor",
     header: () => <div className="text-right">Money Factor</div>,
     cell: ({ row }) => {
-      const moneyFactor = parseFloat(row.getValue("moneyFactor"));
-      const formatted = new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD",
-      }).format(moneyFactor);
-
       return (
         <div className="text-right font-medium">
-          {moneyFactor ? formatted : ""}
+          {row.getValue("moneyFactor")}
         </div>
       );
     },
   },
   {
-    accessorKey: "totalDriveOffs",
+    accessorKey: "totalDriveoffs",
     header: () => <div className="text-right">Total Drive Offs</div>,
     cell: ({ row }) => {
-      const totalDriveOffs = parseFloat(row.getValue("totalDriveOffs"));
-      const formatted = new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD",
-      }).format(totalDriveOffs);
-
       return (
         <div className="text-right font-medium">
-          {totalDriveOffs ? formatted : ""}
+          {row.getValue("totalDriveoffs")}
         </div>
       );
     },
   },
   {
-    accessorKey: "terms",
+    accessorKey: "term",
     header: () => <div className="text-right">Terms</div>,
     cell: ({ row }) => {
-      const terms = parseFloat(row.getValue("terms"));
-      const formatted = new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD",
-      }).format(terms);
-
       return (
-        <div className="text-right font-medium">{terms ? formatted : ""}</div>
+        <div className="text-right font-medium">{row.getValue("term")}</div>
       );
     },
   },
@@ -155,14 +117,8 @@ export const columns: ColumnDef<TableValues>[] = [
     accessorKey: "noMSDs",
     header: () => <div className="text-right">No MSDs</div>,
     cell: ({ row }) => {
-      const noMSDs = parseFloat(row.getValue("noMSDs"));
-      const formatted = new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD",
-      }).format(noMSDs);
-
       return (
-        <div className="text-right font-medium">{noMSDs ? formatted : ""}</div>
+        <div className="text-right font-medium">{row.getValue("noMSDs")}</div>
       );
     },
   },
@@ -177,7 +133,7 @@ export const columns: ColumnDef<TableValues>[] = [
       }).format(msds);
 
       return (
-        <div className="text-right font-medium">{msds ? formatted : ""}</div>
+        <div className="text-right font-medium">{row.getValue("msds")}</div>
       );
     },
   },
