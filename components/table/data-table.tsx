@@ -49,7 +49,7 @@ export default function DataTable<TData, TValue>({
     data,
     columns,
     getCoreRowModel: getCoreRowModel(),
-
+    getPaginationRowModel: getPaginationRowModel(),
     onSortingChange: setSorting,
     getSortedRowModel: getSortedRowModel(),
     onColumnFiltersChange: setColumnFilters,
@@ -106,7 +106,7 @@ export default function DataTable<TData, TValue>({
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
-          <div className="flex flex-col h-screen">
+          <div className="flex flex-col max-h-lg">
             <div className="flex-grow rounded-md border overflow-y-auto">
               <Table className="relative w-full">
                 <TableHeader>
