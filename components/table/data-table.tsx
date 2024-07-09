@@ -106,15 +106,15 @@ export default function DataTable<TData, TValue>({
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
-          <div className="rounded-md border">
-            <Table>
+          <div className="rounded-md border max-h-lg overflow-y-auto">
+            <Table className="relative">
               <TableHeader>
                 {table?.getHeaderGroups().map((headerGroup) => (
                   <TableRow key={headerGroup.id}>
                     {headerGroup.headers.map((header) => {
                       return (
                         <TableHead
-                          className="text-xs lg:text-base"
+                          className="text-xs lg:text-base sticky top-0"
                           key={header.id}
                         >
                           {header.isPlaceholder
