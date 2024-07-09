@@ -127,10 +127,6 @@ export const columns: ColumnDef<TableValues>[] = [
     header: () => <div className="text-right">MSDs</div>,
     cell: ({ row }) => {
       const msds = parseFloat(row.getValue("msds"));
-      const formatted = new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD",
-      }).format(msds);
 
       return (
         <div className="text-right font-medium">{row.getValue("msds")}</div>
