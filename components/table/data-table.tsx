@@ -3,6 +3,17 @@ import { Button } from "@/components/ui/button";
 import * as React from "react";
 import { Input } from "@/components/ui/input";
 import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+
+import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
@@ -29,7 +40,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { ListFilter } from "lucide-react";
+import { ListFilter, SlidersHorizontal } from "lucide-react";
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
@@ -112,6 +123,12 @@ export default function DataTable<TData, TValue>({
               <ListFilter className="size-6" />
               <span>Filter</span>
             </button>
+            <Drawer direction="right">
+              <DrawerTrigger>
+                <SlidersHorizontal />
+              </DrawerTrigger>
+              <DrawerContent className="h-96  -top-24  border-t-8 border-red-900"></DrawerContent>
+            </Drawer>
           </div>
           <div className="flex flex-col max-h-lg">
             <div className="flex-grow rounded-md border overflow-y-auto">
