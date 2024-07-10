@@ -41,6 +41,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { ListFilter, SlidersHorizontal } from "lucide-react";
+import Sidebar from "../siderbar/sidebar";
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
@@ -127,7 +128,9 @@ export default function DataTable<TData, TValue>({
               <DrawerTrigger>
                 <SlidersHorizontal />
               </DrawerTrigger>
-              <DrawerContent className="h-96  -top-24  border-t-8 border-red-900"></DrawerContent>
+              <DrawerContent className="h-96 -top-24  border-t-8 border-red-900">
+                <Sidebar />
+              </DrawerContent>
             </Drawer>
           </div>
           <div className="flex flex-col max-h-lg">
