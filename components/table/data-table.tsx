@@ -130,7 +130,7 @@ export default function DataTable<TData, TValue>({
               <DrawerTrigger>
                 <SlidersHorizontal />
               </DrawerTrigger>
-              <DrawerContent className="!w-1/2 h-screen rounded-none fixed overflow-hidden flex items-center justify-center">
+              <DrawerContent className="!w-1/2 h-screen rounded-none fixed overflow-hidden overflow-y-auto flex items-center justify-center">
                 <Sidebar />
               </DrawerContent>
             </Drawer>

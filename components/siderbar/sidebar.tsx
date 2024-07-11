@@ -25,14 +25,19 @@ export default function Sidebar() {
             className="flex items-center gap-3 text-sm border-none !px-0"
             type="button"
           >
-            <Nfc className="size-4" />
+            <Image
+              src={"/icons/contact.png"}
+              width={16}
+              height={16}
+              alt="Icon"
+            />
             Contact Us
           </button>
           <button
             className="flex items-center text-sm gap-3 border-none"
             type="button"
           >
-            <Fullscreen className="size-4" />
+            <Image src={"/icons/lens.png"} width={16} height={16} alt="Icon" />
             View All Inventory
           </button>
         </div>
@@ -42,34 +47,49 @@ export default function Sidebar() {
             type="button"
           >
             Vehicles
-            <ChevronDown className="size-3" />
+            <Image
+              src={"/icons/chev-down.png"}
+              width={6}
+              height={6}
+              alt="Icon"
+            />
           </button>
           <button
             className="flex items-center gap-3 text-sm border-none !px-0"
             type="button"
           >
-            <Car className="size-4" />
+            <Image src={"/icons/bmw.png"} width={16} height={16} alt="Icon" />
             BMW
           </button>
           <button
             className="flex items-center gap-3 text-sm border-none !px-0"
             type="button"
           >
-            <CarTaxiFront className="size-4" />
+            <Image src={"/icons/audi.png"} width={16} height={16} alt="Icon" />
             Mercedes-Benz
           </button>
           <button
             className="flex items-center gap-3 text-sm border-none !px-0"
             type="button"
           >
-            <CarFront className="size-4" />
+            <Image
+              src={"/icons/porsche.png"}
+              width={16}
+              height={16}
+              alt="Icon"
+            />
             Porsche
           </button>
           <button
             className="flex items-center gap-3 text-sm border-none !px-0"
             type="button"
           >
-            <CarFront className="size-4" />
+            <Image
+              src={"/icons/contact-gray.png"}
+              width={16}
+              height={16}
+              alt="Icon"
+            />
             Audi
           </button>
         </div>
@@ -79,13 +99,18 @@ export default function Sidebar() {
             type="button"
           >
             Favorites
-            <ChevronDown className="size-3" />
+            <Image
+              src={"/icons/chev-down.png"}
+              width={6}
+              height={6}
+              alt="Icon"
+            />
           </button>
           <button
             type="button"
             className="flex items-center gap-3 text-sm border-none !px-0"
           >
-            <ClipboardList className="size-4 text-indigo-700" />
+            <Image src={"/icons/list.png"} width={16} height={16} alt="Icon" />
             HOT DEALS
           </button>
         </div>
@@ -95,13 +120,23 @@ export default function Sidebar() {
             type="button"
           >
             Favorites
-            <ChevronDown className="size-3" />
+            <Image
+              src={"/icons/chev-down.png"}
+              width={6}
+              height={6}
+              alt="Icon"
+            />
           </button>
           <button
             type="button"
             className="flex items-center gap-3 text-sm border-none !px-0"
           >
-            <ClipboardList className="size-4 text-indigo-700" />
+            <Image
+              src={"/icons/contact-indigo.png"}
+              width={16}
+              height={16}
+              alt="Icon"
+            />
             HOT DEALS
             <Lock className="size-4 text-zinc-600" />
             <ChevronDown className="size-3" />
@@ -110,7 +145,12 @@ export default function Sidebar() {
             className="flex items-center gap-3 text-sm border-none !px-0 ml-6"
             type="button"
           >
-            <Car className="size-4" />
+            <Image
+              src={"/icons/backie.png"}
+              width={16}
+              height={16}
+              alt="Icon"
+            />
             BMW
           </button>
           <ul className="flex flex-col border-l-2 border-gray-300">
@@ -135,7 +175,7 @@ export default function Sidebar() {
             className="flex items-center gap-3 text-sm border-none !px-0 ml-6"
             type="button"
           >
-            <Car className="size-4" />
+            <Image src={"/icons/audi.png"} width={16} height={16} alt="Icon" />
             Audi
           </button>
         </div>
