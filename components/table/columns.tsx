@@ -57,7 +57,13 @@ export const columns: ColumnDef<TableValues>[] = [
     header: () => <div className="text-right">MSRP</div>,
     cell: ({ row }) => {
       return (
-        <div className="text-right font-medium">{row.getValue("msrp")}</div>
+        <>
+          {row.getValue("msrp") ? (
+            <div className="text-right font-medium">{row.getValue("msrp")}</div>
+          ) : (
+            <></>
+          )}
+        </>
       );
     },
   },
