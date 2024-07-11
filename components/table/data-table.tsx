@@ -136,16 +136,19 @@ export default function DataTable<TData, TValue>({
             </Drawer>
           </div>
 
-          <div className="flex flex-col h-96">
+          <div className="flex flex-col max-h-screen">
             <div className="flex-grow overflow-auto rounded-md border">
               <Table className="relative w-full">
                 <TableHeader>
                   {table?.getHeaderGroups().map((headerGroup) => (
-                    <TableRow key={headerGroup.id}>
+                    <TableRow
+                      key={headerGroup.id}
+                      className="!bg-white border-b"
+                    >
                       {headerGroup.headers.map((header) => {
                         return (
                           <TableHead
-                            className="z-10 sticky top-0"
+                            className="z-10 sticky top-0 bg-white"
                             key={header.id}
                           >
                             {header.isPlaceholder
