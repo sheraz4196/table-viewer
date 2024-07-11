@@ -124,11 +124,11 @@ export default function DataTable<TData, TValue>({
               <ListFilter className="size-6" />
               <span>Filter</span>
             </button>
-            <Drawer direction="right">
+            <Drawer direction="left">
               <DrawerTrigger>
                 <SlidersHorizontal />
               </DrawerTrigger>
-              <DrawerContent className=" !w-1/2 h-screen fixed left-80 -top-24 overflow-hidden flex items-center justify-center ">
+              <DrawerContent className=" !w-1/2 h-screen fixed overflow-hidden flex items-center justify-center ">
                 <Sidebar />
               </DrawerContent>
             </Drawer>
