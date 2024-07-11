@@ -8,11 +8,9 @@ import {
   Nfc,
   Lock,
   Plus,
-  Video,
   PlayCircle,
 } from "lucide-react";
 import Image from "next/image";
-import { Button } from "../ui/button";
 
 export default function Sidebar() {
   return (
@@ -30,11 +28,11 @@ export default function Sidebar() {
             Contact Us
           </button>
           <button
-            className="flex items-center text-sm gap-3 font-bold border-none"
+            className="flex items-center text-sm gap-3 border-none"
             type="button"
           >
             <Fullscreen className="size-4" />
-            Contact Us
+            View All Inventory
           </button>
         </div>
         <div className="flex flex-col gap-3 p-2">
