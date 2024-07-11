@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+div.mx-auto.h-2.bg-zinc-100.rounded-full.mt-4 {
+  display: none;
+}
