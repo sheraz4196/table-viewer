@@ -42,10 +42,12 @@ import {
 } from "@/components/ui/table";
 import { ListFilter, SlidersHorizontal } from "lucide-react";
 import Sidebar from "../siderbar/sidebar";
+
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
 }
+
 export default function DataTable<TData, TValue>({
   columns,
   data,
@@ -57,19 +59,18 @@ export default function DataTable<TData, TValue>({
   const [columnVisibility, setColumnVisibility] =
     React.useState<VisibilityState>({});
   const [rowSelection, setRowSelection] = React.useState({});
-  console.log("Hello I am Formatted", data[4]);
+
   const table = useReactTable({
     data,
     columns,
     getCoreRowModel: getCoreRowModel(),
-    getPaginationRowModel: getPaginationRowModel(),
+    // getPaginationRowModel: getPaginationRowModel(),
     onSortingChange: setSorting,
     getSortedRowModel: getSortedRowModel(),
     onColumnFiltersChange: setColumnFilters,
     getFilteredRowModel: getFilteredRowModel(),
     onColumnVisibilityChange: setColumnVisibility,
     onRowSelectionChange: setRowSelection,
-
     state: {
       sorting,
       columnFilters,
@@ -77,11 +78,12 @@ export default function DataTable<TData, TValue>({
       rowSelection,
     },
   });
+
   return (
     <>
       {data && (
         <div>
-          <div className="hidden lg:flex  items-center py-4">
+          <div className="hidden lg:flex items-center py-4">
             <Input
               placeholder="Filter emails..."
               value={
@@ -128,64 +130,66 @@ export default function DataTable<TData, TValue>({
               <DrawerTrigger>
                 <SlidersHorizontal />
               </DrawerTrigger>
-              <DrawerContent className=" !w-1/2 h-screen fixed overflow-hidden flex items-center justify-center ">
+              <DrawerContent className="!w-1/2 h-screen fixed overflow-hidden flex items-center justify-center">
                 <Sidebar />
               </DrawerContent>
             </Drawer>
           </div>
-          <div className="flex flex-col max-h-lg">
-            <div className="flex-grow rounded-md border overflow-y-auto">
-              <Table className="relative w-full">
-                <TableHeader>
-                  {table?.getHeaderGroups().map((headerGroup) => (
-                    <TableRow key={headerGroup.id}>
-                      {headerGroup.headers.map((header) => {
-                        return (
-                          <TableHead
-                            className={`text-xs lg:text-base sticky top-0`}
-                            key={header.id}
-                          >
-                            {header.isPlaceholder
-                              ? null
-                              : flexRender(
-                                  header.column.columnDef.header,
-                                  header.getContext()
-                                )}
-                          </TableHead>
-                        );
-                      })}
-                    </TableRow>
-                  ))}
-                </TableHeader>
-                <TableBody>
-                  {table?.getRowModel().rows?.length ? (
-                    table?.getRowModel().rows.map((row) => (
-                      <TableRow
-                        key={row.id}
-                        data-state={row.getIsSelected() && "selected"}
-                      >
-                        {row.getVisibleCells().map((cell) => (
-                          <TableCell className="text-xs" key={cell.id}>
-                            {flexRender(
-                              cell.column.columnDef.cell,
-                              cell.getContext()
-                            )}
-                          </TableCell>
-                        ))}
+          <div className="flex flex-col">
+            <div className="relative flex-grow rounded-md border">
+              <div className="relative h-96 overflow-auto">
+                <Table className="w-full">
+                  <TableHeader className="w-full  z-10">
+                    {table?.getHeaderGroups().map((headerGroup) => (
+                      <TableRow key={headerGroup.id}>
+                        {headerGroup.headers.map((header) => {
+                          return (
+                            <TableHead
+                              className="z-10  sticky top-0"
+                              key={header.id}
+                            >
+                              {header.isPlaceholder
+                                ? null
+                                : flexRender(
+                                    header.column.columnDef.header,
+                                    header.getContext()
+                                  )}
+                            </TableHead>
+                          );
+                        })}
                       </TableRow>
-                    ))
-                  ) : (
-                    <TableRow>
-                      <TableCell
-                        colSpan={columns.length}
-                        className="h-24 text-center"
-                      >
-                        No results.
-                      </TableCell>
-                    </TableRow>
-                  )}
-                </TableBody>
-              </Table>
+                    ))}
+                  </TableHeader>
+                  <TableBody>
+                    {table?.getRowModel().rows?.length ? (
+                      table?.getRowModel().rows.map((row) => (
+                        <TableRow
+                          key={row.id}
+                          data-state={row.getIsSelected() && "selected"}
+                        >
+                          {row.getVisibleCells().map((cell) => (
+                            <TableCell className="text-xs" key={cell.id}>
+                              {flexRender(
+                                cell.column.columnDef.cell,
+                                cell.getContext()
+                              )}
+                            </TableCell>
+                          ))}
+                        </TableRow>
+                      ))
+                    ) : (
+                      <TableRow>
+                        <TableCell
+                          colSpan={columns.length}
+                          className="h-24 text-center"
+                        >
+                          No results.
+                        </TableCell>
+                      </TableRow>
+                    )}
+                  </TableBody>
+                </Table>
+              </div>
             </div>
           </div>
           <div className="flex items-center justify-end space-x-2 py-4">

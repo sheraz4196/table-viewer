@@ -75,7 +75,7 @@ export const columns: ColumnDef<TableValues>[] = [
   },
   {
     accessorKey: "residual",
-    header: () => <div className="text-right">Residual</div>,
+    header: () => <div className="text-right sticky top-0">Residual</div>,
     cell: ({ row }) => {
       return (
         <div className="text-right font-medium">{row.getValue("residual")}</div>
@@ -84,7 +84,7 @@ export const columns: ColumnDef<TableValues>[] = [
   },
   {
     accessorKey: "moneyFactor",
-    header: () => <div className="text-right">Money Factor</div>,
+    header: () => <div className="text-right sticky top-0">Money Factor</div>,
     cell: ({ row }) => {
       return (
         <div className="text-right font-medium">
@@ -95,7 +95,7 @@ export const columns: ColumnDef<TableValues>[] = [
   },
   {
     accessorKey: "totalDriveoffs",
-    header: () => <div className="text-right">Total Drive Offs</div>,
+    header: () => <div className="text-right ">Total Drive Offs</div>,
     cell: ({ row }) => {
       return (
         <div className="text-right font-medium">
@@ -126,8 +126,6 @@ export const columns: ColumnDef<TableValues>[] = [
     accessorKey: "msds",
     header: () => <div className="text-right">MSDs</div>,
     cell: ({ row }) => {
-      const msds = parseFloat(row.getValue("msds"));
-
       return (
         <div className="text-right font-medium">{row.getValue("msds")}</div>
       );
