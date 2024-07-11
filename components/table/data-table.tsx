@@ -130,7 +130,7 @@ export default function DataTable<TData, TValue>({
               <DrawerTrigger>
                 <SlidersHorizontal />
               </DrawerTrigger>
-              <DrawerContent className="!w-1/2 h-screen fixed overflow-hidden flex items-center justify-center">
+              <DrawerContent className="!w-1/2 h-screen rounded-none fixed overflow-hidden flex items-center justify-center">
                 <Sidebar />
               </DrawerContent>
             </Drawer>
@@ -194,7 +194,7 @@ export default function DataTable<TData, TValue>({
               </Table>
             </div>
           </div>
-          <div className="flex items-center justify-end space-x-2 py-4">
+          {/* <div className="flex items-center justify-end space-x-2 py-4">
             <Button
               variant="outline"
               size="sm"
@@ -211,7 +211,7 @@ export default function DataTable<TData, TValue>({
             >
               Next
             </Button>
-          </div>
+          </div> */}
         </div>
       )}
     </>
