@@ -137,15 +137,15 @@ export default function DataTable<TData, TValue>({
           </div>
           <div className="flex flex-col">
             <div className="relative flex-grow rounded-md border">
-              <div className="relative">
+              <div className="relative h-96 overflow-auto">
                 <Table className="w-full">
-                  <TableHeader className="sticky top-0 bg-red-50 z-10">
+                  <TableHeader className="w-full z-10">
                     {table?.getHeaderGroups().map((headerGroup) => (
                       <TableRow key={headerGroup.id}>
                         {headerGroup.headers.map((header) => {
                           return (
                             <TableHead
-                              className="sticky top-0 z-10 bg-red-50"
+                              className="z-10 sticky top-0"
                               key={header.id}
                             >
                               {header.isPlaceholder
@@ -160,7 +160,7 @@ export default function DataTable<TData, TValue>({
                       </TableRow>
                     ))}
                   </TableHeader>
-                  <TableBody className="h-96 overflow-auto">
+                  <TableBody>
                     {table?.getRowModel().rows?.length ? (
                       table?.getRowModel().rows.map((row) => (
                         <TableRow
