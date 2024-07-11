@@ -108,7 +108,7 @@ export default function Sidebar() {
           </button>
           <button
             type="button"
-            className="flex items-center gap-3 text-sm border-none !px-0"
+            className="flex items-center gap-3 text-sm border-none bg-[#efefef] px-4 py-2 rounded-sm"
           >
             <Image src={"/icons/list.png"} width={16} height={16} alt="Icon" />
             HOT DEALS
@@ -142,7 +142,7 @@ export default function Sidebar() {
             <ChevronDown className="size-3" />
           </button>
           <button
-            className="flex items-center gap-3 text-sm border-none !px-0 ml-6"
+            className="flex items-center gap-3 text-sm border-none ml-6 bg-[#efefef] px-4 py-2 rounded-sm"
             type="button"
           >
             <Image
