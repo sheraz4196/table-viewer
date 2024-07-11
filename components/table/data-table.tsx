@@ -128,7 +128,7 @@ export default function DataTable<TData, TValue>({
               <DrawerTrigger>
                 <SlidersHorizontal />
               </DrawerTrigger>
-              <DrawerContent className=" max-h-max  -top-24  border-t-8 border-red-900">
+              <DrawerContent className=" !w-1/2 h-screen fixed left-80 -top-24 overflow-hidden flex items-center justify-center ">
                 <Sidebar />
               </DrawerContent>
             </Drawer>
