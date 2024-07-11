@@ -11,10 +11,11 @@ import {
   PlayCircle,
 } from "lucide-react";
 import Image from "next/image";
+import { Button } from "../ui/button";
 
 export default function Sidebar() {
   return (
-    <div className="flex items-center justify-center w-56">
+    <div className="flex items-center justify-center w-56 relative">
       <div className="flex flex-col gap-1.5">
         <div className="p-2">
           <Image src={"/logo.png"} alt="Logo" width={142} height={17} />
@@ -126,7 +127,7 @@ export default function Sidebar() {
                 className="flex items-center gap-3 text-sm border-none !px-0 ml-6"
                 type="button"
               >
-                Por
+                Porsche
               </button>
             </li>
           </ul>
@@ -162,6 +163,13 @@ export default function Sidebar() {
           </button>
         </div>
       </div>
+      <Button
+        className="rounded-full absolute -bottom-16 left-6"
+        variant={"outline"}
+        size={"icon"}
+      >
+        ?
+      </Button>
     </div>
   );
 }
