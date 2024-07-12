@@ -458,7 +458,7 @@ export default function DataTable<TData, TValue>({
     <>
       {data && (
         <div>
-          <div className="hidden lg:flex items-center py-4">
+          {/* <div className="hidden lg:flex items-center py-4">
             <Input
               placeholder="Filter emails..."
               value={
@@ -495,7 +495,7 @@ export default function DataTable<TData, TValue>({
                   })}
               </DropdownMenuContent>
             </DropdownMenu>
-          </div>
+          </div> */}
           <div className="flex lg:hidden items-center justify-between py-4">
             <button type="button" className="flex items-center gap-4">
               <ListFilter className="size-6" />
