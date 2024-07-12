@@ -567,7 +567,15 @@ export default function DataTable<TData, TValue>({
                 <TableHeader className="bg-red-200">
                   <TableRow className="!bg-white border-b">
                     <TableHead className="z-10 sticky top-0 bg-red-200">
-                      Mercedes-Benz {MERCEDES_BENZ.length}
+                      <div className="flex items-center gap-3">
+                        <Image
+                          src={"/benz.png"}
+                          alt="BMW logo"
+                          width={18}
+                          height={18}
+                        />
+                        Mercedes-Benz {MERCEDES_BENZ.length}
+                      </div>
                     </TableHead>
                     <TableHead className="z-10 sticky top-0 bg-red-200">
                       Drive Of
@@ -584,6 +592,12 @@ export default function DataTable<TData, TValue>({
                         {/* <TableCell className="text-xs">{item.star}</TableCell> */}
                         <TableCell className="text-xs flex items-center gap-3">
                           {item.icon}
+                          <Image
+                            src={"/benz.png"}
+                            alt="BMW logo"
+                            width={18}
+                            height={18}
+                          />
                           <p>{item.title}</p>
                         </TableCell>
                         <TableCell className="text-xs">
