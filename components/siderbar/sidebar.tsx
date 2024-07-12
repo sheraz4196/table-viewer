@@ -15,7 +15,7 @@ export default function Sidebar() {
   const { theme } = useTheme();
   return (
     <div className="flex items-center justify-center w-56 relative pt-16">
-      <div className="flex flex-col gap-1.5">
+      <div className="flex flex-col gap-1.5 px-4">
         <div className="p-2">
           {theme === "dark" ? (
             <Image
