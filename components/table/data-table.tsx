@@ -514,9 +514,9 @@ export default function DataTable<TData, TValue>({
           <div className="flex flex-col max-h-screen">
             <div className="flex-grow overflow-auto rounded-md border">
               <Table className="relative w-full">
-                <TableHeader className="bg-green-200">
-                  <TableRow className="!bg-white border-b">
-                    <TableHead className="z-10 sticky top-0 bg-green-200">
+                <TableHeader>
+                  <TableRow className="bg-[#ECECEC] dark:bg-[#17181A] border-b">
+                    <TableHead className="z-10 sticky top-0 bg-[#ECECEC] dark:bg-[#17181A]">
                       <div className="flex items-center gap-3">
                         <Image
                           src={"/bmw.png"}
@@ -527,10 +527,10 @@ export default function DataTable<TData, TValue>({
                         <p>BMW {BMW_DATA.length}</p>
                       </div>
                     </TableHead>
-                    <TableHead className="z-10 sticky top-0 bg-green-200">
+                    <TableHead className="z-10 sticky top-0 bg-[#ECECEC] dark:bg-[#17181A]">
                       Monthly
                     </TableHead>
-                    <TableHead className="z-10 sticky top-0 bg-green-200"></TableHead>
+                    <TableHead className="z-10 sticky top-0 bg-[#ECECEC] dark:bg-[#17181A]"></TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -564,9 +564,9 @@ export default function DataTable<TData, TValue>({
                     </TableRow>
                   )}
                 </TableBody>
-                <TableHeader className="bg-red-200">
-                  <TableRow className="!bg-white border-b">
-                    <TableHead className="z-10 sticky top-0 bg-red-200">
+                <TableHeader className="bg-[#ECECEC] dark:bg-[#17181A]">
+                  <TableRow className="bg-[#ECECEC]dark:bg-[#17181A] border-b">
+                    <TableHead className="z-10 sticky top-0 bg-[#ECECEC] dark:bg-[#17181A]">
                       <div className="flex items-center gap-3">
                         <Image
                           src={"/benz.png"}
@@ -578,10 +578,10 @@ export default function DataTable<TData, TValue>({
                         Mercedes-Benz {MERCEDES_BENZ.length}
                       </div>
                     </TableHead>
-                    <TableHead className="z-10 sticky top-0 bg-red-200">
+                    <TableHead className="z-10 sticky top-0 bg-[#ECECEC] dark:bg-[#17181A]">
                       Drive Of
                     </TableHead>
-                    <TableHead className="z-10 sticky top-0 bg-red-200">
+                    <TableHead className="z-10 sticky top-0 bg-[#ECECEC] dark:bg-[#17181A]">
                       Monthly
                     </TableHead>
                   </TableRow>
@@ -598,6 +598,7 @@ export default function DataTable<TData, TValue>({
                             alt="BMW logo"
                             width={18}
                             height={18}
+                            className="bg-black rounded-full"
                           />
                           <p>{item.title}</p>
                         </TableCell>
