@@ -22,7 +22,7 @@ export default function Sidebar() {
         </div>
         <div className="flex flex-col gap-6 p-2">
           <button
-            className="flex items-center gap-3 text-sm border-none !px-0"
+            className="flex items-center gap-3 text-xs border-none !px-0"
             type="button"
           >
             <Image
@@ -34,7 +34,7 @@ export default function Sidebar() {
             Contact Us
           </button>
           <button
-            className="flex items-center text-sm gap-3 border-none"
+            className="flex items-center text-xs gap-3 border-none"
             type="button"
           >
             <Image src={"/icons/lens.png"} width={16} height={16} alt="Icon" />
@@ -43,7 +43,7 @@ export default function Sidebar() {
         </div>
         <div className="flex flex-col gap-3 p-2">
           <button
-            className="flex items-center gap-3 text-sm border-none !px-0"
+            className="flex items-center gap-3 text-xs border-none !px-0"
             type="button"
           >
             Vehicles
@@ -55,21 +55,21 @@ export default function Sidebar() {
             />
           </button>
           <button
-            className="flex items-center gap-3 text-sm border-none !px-0"
+            className="flex items-center gap-3 text-xs border-none !px-0"
             type="button"
           >
             <Image src={"/icons/bmw.png"} width={16} height={16} alt="Icon" />
             BMW
           </button>
           <button
-            className="flex items-center gap-3 text-sm border-none !px-0"
+            className="flex items-center gap-3 text-xs border-none !px-0"
             type="button"
           >
             <Image src={"/icons/audi.png"} width={16} height={16} alt="Icon" />
             Mercedes-Benz
           </button>
           <button
-            className="flex items-center gap-3 text-sm border-none !px-0"
+            className="flex items-center gap-3 text-xs border-none !px-0"
             type="button"
           >
             <Image
@@ -81,7 +81,7 @@ export default function Sidebar() {
             Porsche
           </button>
           <button
-            className="flex items-center gap-3 text-sm border-none !px-0"
+            className="flex items-center gap-3 text-xs border-none !px-0"
             type="button"
           >
             <Image
@@ -95,7 +95,7 @@ export default function Sidebar() {
         </div>
         <div className="flex flex-col gap-3 p-2">
           <button
-            className="flex items-center gap-3 text-sm border-none !px-0"
+            className="flex items-center gap-3 text-xs border-none !px-0"
             type="button"
           >
             Favorites
@@ -108,7 +108,7 @@ export default function Sidebar() {
           </button>
           <button
             type="button"
-            className="flex items-center gap-3 text-sm border-none bg-[#efefef] px-4 py-2 rounded-sm"
+            className="flex items-center gap-3 text-xs border-none bg-[#efefef] px-4 py-2 rounded-sm"
           >
             <Image src={"/icons/list.png"} width={16} height={16} alt="Icon" />
             HOT DEALS
@@ -116,7 +116,7 @@ export default function Sidebar() {
         </div>
         <div className="flex flex-col gap-3 p-2">
           <button
-            className="flex items-center gap-3 text-sm border-none !px-0"
+            className="flex items-center gap-3 text-xs border-none !px-0"
             type="button"
           >
             Favorites
@@ -129,7 +129,7 @@ export default function Sidebar() {
           </button>
           <button
             type="button"
-            className="flex items-center gap-3 text-sm border-none !px-0"
+            className="flex items-center gap-3 text-xs border-none !px-0"
           >
             <Image
               src={"/icons/contact-indigo.png"}
@@ -142,7 +142,7 @@ export default function Sidebar() {
             <ChevronDown className="size-3" />
           </button>
           <button
-            className="flex items-center gap-3 text-sm border-none ml-6 bg-[#efefef] px-4 py-2 rounded-sm"
+            className="flex items-center gap-3 text-xs border-none ml-6 bg-[#efefef] px-4 py-2 rounded-sm"
             type="button"
           >
             <Image
@@ -156,7 +156,7 @@ export default function Sidebar() {
           <ul className="flex flex-col border-l-2 border-gray-300">
             <li>
               <button
-                className="flex items-center gap-3 text-sm border-none !px-0 ml-6"
+                className="flex items-center gap-3 text-xs border-none !px-0 ml-6"
                 type="button"
               >
                 Mercedes
@@ -164,7 +164,7 @@ export default function Sidebar() {
             </li>
             <li>
               <button
-                className="flex items-center gap-3 text-sm border-none !px-0 ml-6"
+                className="flex items-center gap-3 text-xs border-none !px-0 ml-6"
                 type="button"
               >
                 Porsche
@@ -172,7 +172,7 @@ export default function Sidebar() {
             </li>
           </ul>
           <button
-            className="flex items-center gap-3 text-sm border-none !px-0 ml-6"
+            className="flex items-center gap-3 text-xs border-none !px-0 ml-6"
             type="button"
           >
             <Image src={"/icons/audi.png"} width={16} height={16} alt="Icon" />
@@ -181,21 +181,21 @@ export default function Sidebar() {
         </div>
         <div className="flex flex-col gap-3 p-2 mt-6">
           <button
-            className="flex items-center gap-3 text-sm border-none !px-0"
+            className="flex items-center gap-3 text-xs border-none !px-0"
             type="button"
           >
             Try
             <ChevronDown className="size-3" />
           </button>
           <button
-            className="flex items-center gap-3 text-sm border-none !px-0"
+            className="flex items-center gap-3 text-xs border-none !px-0"
             type="button"
           >
             <Plus className="size-4" />
             Share This Website
           </button>
           <button
-            className="flex items-center gap-3 text-sm border-none !px-0"
+            className="flex items-center gap-3 text-xs border-none !px-0"
             type="button"
           >
             <PlayCircle className="size-4" />

@@ -7,15 +7,15 @@ export default function Header() {
   return (
     <header className="p-6 flex items-center justify-between border-b">
       <div className="px-4">
-        {theme === "light" ? (
-          <Image src={`/logo.png`} alt="Site Logo" width={142} height={17} />
-        ) : (
+        {theme === "dark" ? (
           <Image
             src={`/logo-white.png`}
             alt="Site Logo"
             width={142}
             height={17}
           />
+        ) : (
+          <Image src={`/logo.png`} alt="Site Logo" width={142} height={17} />
         )}
       </div>
       <ThemeToggle />
