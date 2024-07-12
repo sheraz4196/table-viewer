@@ -42,6 +42,7 @@ import {
 } from "@/components/ui/table";
 import { ListFilter, SlidersHorizontal } from "lucide-react";
 import Sidebar from "../siderbar/sidebar";
+import Image from "next/image";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -473,7 +474,15 @@ export default function DataTable<TData, TValue>({
                 <TableHeader className="bg-green-200">
                   <TableRow className="!bg-white border-b">
                     <TableHead className="z-10 sticky top-0 bg-green-200">
-                      BMW {BMW_DATA.length}
+                      <div className="flex items-center gap-3">
+                        <Image
+                          src={"/bmw.png"}
+                          alt="BMW logo"
+                          width={18}
+                          height={18}
+                        />
+                        <p>BMW {BMW_DATA.length}</p>
+                      </div>
                     </TableHead>
                     <TableHead className="z-10 sticky top-0 bg-green-200">
                       Monthly
@@ -485,8 +494,16 @@ export default function DataTable<TData, TValue>({
                   {BMW_DATA.length ? (
                     BMW_DATA.map((item, key) => (
                       <TableRow key={key}>
-                        {/* <TableCell className="text-xs">{item.star}</TableCell> */}
-                        <TableCell className="text-xs">{item.title}</TableCell>
+                        <TableCell className="text-xs flex items-center gap-2">
+                          {item.icon}
+                          <Image
+                            src={"/bmw.png"}
+                            alt="BMW logo"
+                            width={18}
+                            height={18}
+                          />
+                          <p>{item.title}</p>
+                        </TableCell>
                         <TableCell className="text-xs">
                           {item.monthly}
                         </TableCell>
