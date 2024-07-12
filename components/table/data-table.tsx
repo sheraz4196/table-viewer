@@ -81,22 +81,335 @@ export default function DataTable<TData, TValue>({
 
   const BMW_DATA = [
     {
-      star: true,
+      icon: <></>,
       title: "2024 M3 Manual (PA, Exec, SL)",
       monthly: "$1239",
     },
     {
-      star: false,
+      icon: <></>,
       title: "2024 M3comp (DApro, PA,Icon)",
       monthly: "$1239",
     },
     {
-      star: false,
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+    {
+      icon: <></>,
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
   ];
-
+  const MERCEDES_BENZ = [
+    {
+      icon: <></>,
+      title: "2024 EQS450",
+      drive_off: "$1,159.65",
+      monthly: "$1,159.65",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+    {
+      icon: <></>,
+      title: "2024 EQS580",
+      drive_off: "$1,159.65",
+      monthly: "$1,173.28",
+    },
+  ];
   return (
     <>
       {data && (
@@ -194,7 +507,7 @@ export default function DataTable<TData, TValue>({
                 <TableHeader className="bg-red-200">
                   <TableRow className="!bg-white border-b">
                     <TableHead className="z-10 sticky top-0 bg-red-200">
-                      Mercedes-Benz {BMW_DATA.length}
+                      Mercedes-Benz {MERCEDES_BENZ.length}
                     </TableHead>
                     <TableHead className="z-10 sticky top-0 bg-red-200">
                       Drive Of
@@ -205,11 +518,14 @@ export default function DataTable<TData, TValue>({
                   </TableRow>
                 </TableHeader>
                 <TableBody>
-                  {BMW_DATA.length ? (
-                    BMW_DATA.map((item, key) => (
+                  {MERCEDES_BENZ.length ? (
+                    MERCEDES_BENZ.map((item, key) => (
                       <TableRow key={key}>
                         {/* <TableCell className="text-xs">{item.star}</TableCell> */}
                         <TableCell className="text-xs">{item.title}</TableCell>
+                        <TableCell className="text-xs">
+                          {item.drive_off}
+                        </TableCell>
                         <TableCell className="text-xs">
                           {item.monthly}
                         </TableCell>
