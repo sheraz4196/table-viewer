@@ -1,17 +1,6 @@
 "use client";
-import { Button } from "@/components/ui/button";
 import * as React from "react";
-import { Input } from "@/components/ui/input";
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
+import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 
 import {
   DropdownMenu,
@@ -505,7 +494,7 @@ export default function DataTable<TData, TValue>({
               <DrawerTrigger>
                 <SlidersHorizontal />
               </DrawerTrigger>
-              <DrawerContent className="!w-1/2 h-screen rounded-none fixed overflow-hidden overflow-y-auto flex items-center justify-center">
+              <DrawerContent className="!w-1/2 h-screen rounded-none fixed overflow-hidden overflow-y-auto flex items-centerfea">
                 <Sidebar />
               </DrawerContent>
             </Drawer>

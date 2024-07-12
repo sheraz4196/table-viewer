@@ -14,7 +14,7 @@ export default function Sidebar() {
   const [hotDeals, setHotDeals] = useState(false);
   const { theme } = useTheme();
   return (
-    <div className="flex items-center justify-center w-56 relative mt-40">
+    <div className="flex items-center justify-center w-56 relative mt-4">
       <div className="flex flex-col gap-1.5">
         <div className="p-2">
           {theme === "dark" ? (
@@ -274,7 +274,7 @@ export default function Sidebar() {
         </div>
       </div>
       <Button
-        className="rounded-full absolute -bottom-16 left-6"
+        className="rounded-full fixed bottom-12 left-6"
         variant={"outline"}
         size={"icon"}
       >
