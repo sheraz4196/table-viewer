@@ -79,6 +79,24 @@ export default function DataTable<TData, TValue>({
     },
   });
 
+  const BMW_DATA = [
+    {
+      star: true,
+      title: "2024 M3 Manual (PA, Exec, SL)",
+      monthly: "$1239",
+    },
+    {
+      star: false,
+      title: "2024 M3comp (DApro, PA,Icon)",
+      monthly: "$1239",
+    },
+    {
+      star: false,
+      title: `760xi (Exec,Msport,21",Rear Ent)`,
+      monthly: "$1239",
+    },
+  ];
+
   return (
     <>
       {data && (
@@ -140,30 +158,23 @@ export default function DataTable<TData, TValue>({
             <div className="flex-grow overflow-auto rounded-md border">
               <Table className="relative w-full">
                 <TableHeader>
-                  {table?.getHeaderGroups().map((headerGroup) => (
-                    <TableRow
-                      key={headerGroup.id}
-                      className="!bg-white border-b"
-                    >
-                      {headerGroup.headers.map((header) => {
-                        return (
-                          <TableHead
-                            className="z-10 sticky top-0 bg-white"
-                            key={header.id}
-                          >
-                            {header.isPlaceholder
-                              ? null
-                              : flexRender(
-                                  header.column.columnDef.header,
-                                  header.getContext()
-                                )}
-                          </TableHead>
-                        );
-                      })}
-                    </TableRow>
-                  ))}
+                  <TableRow className="!bg-white border-b">
+                    <TableHead className="z-10 sticky top-0 bg-white">
+                      BMW {BMW_DATA.length}
+                    </TableHead>
+                    <TableHead className="z-10 sticky top-0 bg-white">
+                      Monthly
+                    </TableHead>
+                  </TableRow>
                 </TableHeader>
                 <TableBody>
+                  {BMW_DATA.map((item, key) => (
+                    <TableRow key={key}>
+                      {/* <TableCell className="text-xs">{item.star}</TableCell> */}
+                      <TableCell className="text-xs">{item.title}</TableCell>
+                      <TableCell className="text-xs">{item.monthly}</TableCell>
+                    </TableRow>
+                  ))}
                   {table?.getRowModel().rows?.length ? (
                     table?.getRowModel().rows.map((row) => (
                       <TableRow
