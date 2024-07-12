@@ -82,330 +82,373 @@ export default function DataTable<TData, TValue>({
 
   const BMW_DATA = [
     {
-      icon: <></>,
+      icon: <Image src={"/star.png"} alt="Star" width={18} height={18} />,
       title: "2024 M3 Manual (PA, Exec, SL)",
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
       title: "2024 M3comp (DApro, PA,Icon)",
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: `760xi (Exec,Msport,21",Rear Ent)`,
       monthly: "$1239",
     },
   ];
   const MERCEDES_BENZ = [
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS450",
       drive_off: "$1,159.65",
       monthly: "$1,159.65",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
     },
     {
-      icon: <></>,
+      icon: <Image src={"/warn.png"} alt="WARN icon" width={18} height={18} />,
+
       title: "2024 EQS580",
       drive_off: "$1,159.65",
       monthly: "$1,173.28",
@@ -539,7 +582,10 @@ export default function DataTable<TData, TValue>({
                     MERCEDES_BENZ.map((item, key) => (
                       <TableRow key={key}>
                         {/* <TableCell className="text-xs">{item.star}</TableCell> */}
-                        <TableCell className="text-xs">{item.title}</TableCell>
+                        <TableCell className="text-xs flex items-center gap-3">
+                          {item.icon}
+                          <p>{item.title}</p>
+                        </TableCell>
                         <TableCell className="text-xs">
                           {item.drive_off}
                         </TableCell>
