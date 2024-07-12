@@ -1,15 +1,4 @@
-import {
-  Car,
-  CarFront,
-  CarTaxiFront,
-  ChevronDown,
-  ClipboardList,
-  Fullscreen,
-  Nfc,
-  Lock,
-  Plus,
-  PlayCircle,
-} from "lucide-react";
+import { ChevronDown, Lock, Plus, PlayCircle } from "lucide-react";
 import Image from "next/image";
 import { Button } from "../ui/button";
 
