@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { useTheme } from "next-themes";
 
 export default function Sidebar() {
   const [openFavorite, setOpenFavorite] = useState(false);
@@ -11,11 +12,21 @@ export default function Sidebar() {
   const [vehicles, setVehicles] = useState(false);
   const [tryOpen, setTryOpen] = useState(false);
   const [hotDeals, setHotDeals] = useState(false);
+  const { theme } = useTheme();
   return (
     <div className="flex items-center justify-center w-56 relative mt-40">
       <div className="flex flex-col gap-1.5">
         <div className="p-2">
-          <Image src={"/logo.png"} alt="Logo" width={142} height={17} />
+          {theme === "dark" ? (
+            <Image
+              src={`/logo-white.png`}
+              alt="Site Logo"
+              width={142}
+              height={17}
+            />
+          ) : (
+            <Image src={`/logo.png`} alt="Site Logo" width={142} height={17} />
+          )}
         </div>
         <div className="flex flex-col gap-6 p-2">
           <button
@@ -27,6 +38,7 @@ export default function Sidebar() {
               width={16}
               height={16}
               alt="Icon"
+              className="dark:brightness-200"
             />
             Contact Us
           </button>
@@ -34,7 +46,13 @@ export default function Sidebar() {
             className="flex items-center text-xs gap-3 border-none"
             type="button"
           >
-            <Image src={"/icons/lens.png"} width={16} height={16} alt="Icon" />
+            <Image
+              src={"/icons/lens.png"}
+              width={16}
+              height={16}
+              alt="Icon"
+              className="dark:brightness-200"
+            />
             View All Inventory
           </button>
         </div>
@@ -64,6 +82,7 @@ export default function Sidebar() {
                   width={16}
                   height={16}
                   alt="Icon"
+                  className="dark:brightness-200"
                 />
                 BMW
               </button>
@@ -76,6 +95,7 @@ export default function Sidebar() {
                   width={16}
                   height={16}
                   alt="Icon"
+                  className="dark:brightness-200"
                 />
                 Mercedes-Benz
               </button>
@@ -88,6 +108,7 @@ export default function Sidebar() {
                   width={16}
                   height={16}
                   alt="Icon"
+                  className="dark:brightness-200"
                 />
                 Porsche
               </button>
@@ -100,6 +121,7 @@ export default function Sidebar() {
                   width={16}
                   height={16}
                   alt="Icon"
+                  className="dark:brightness-200"
                 />
                 Audi
               </button>
@@ -124,7 +146,7 @@ export default function Sidebar() {
           {openFavorite && (
             <button
               type="button"
-              className="flex items-center gap-3 text-xs border-none bg-[#efefef] px-4 py-2 rounded-sm"
+              className="flex items-center gap-3 text-xs border-none bg-[#efefef] dark:bg-zinc-600/70 px-4 py-2 rounded-sm"
             >
               <Image
                 src={"/icons/list.png"}
@@ -173,7 +195,7 @@ export default function Sidebar() {
 
               {hotDeals && (
                 <button
-                  className="flex items-center gap-3 text-xs border-none ml-6 bg-[#efefef] px-4 py-2 rounded-sm"
+                  className="flex items-center gap-3 text-xs border-none ml-6 bg-[#efefef] dark:bg-zinc-600/70 px-4 py-2 rounded-sm"
                   type="button"
                 >
                   <Image
@@ -181,11 +203,12 @@ export default function Sidebar() {
                     width={16}
                     height={16}
                     alt="Icon"
+                    className="dark:brightness-200"
                   />
                   BMW
                 </button>
               )}
-              <ul className="flex flex-col border-l-2 border-gray-300">
+              <ul className="flex flex-col gap-3 border-l-2 border-gray-300">
                 <li>
                   <button
                     className="flex items-center gap-3 text-xs border-none !px-0 ml-6"
@@ -212,6 +235,7 @@ export default function Sidebar() {
                   width={16}
                   height={16}
                   alt="Icon"
+                  className="dark:brightness-200"
                 />
                 Audi
               </button>
