@@ -7,11 +7,11 @@ import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
 
 export default function Sidebar() {
-  const [openFavorite, setOpenFavorite] = useState(false);
-  const [allFavorites, setAllFavorites] = useState(false);
-  const [vehicles, setVehicles] = useState(false);
-  const [tryOpen, setTryOpen] = useState(false);
-  const [hotDeals, setHotDeals] = useState(false);
+  const [openFavorite, setOpenFavorite] = useState(true);
+  const [allFavorites, setAllFavorites] = useState(true);
+  const [vehicles, setVehicles] = useState(true);
+  const [tryOpen, setTryOpen] = useState(true);
+  const [hotDeals, setHotDeals] = useState(true);
   const { theme } = useTheme();
   return (
     <div className="flex items-center justify-center w-56 relative pt-16">
