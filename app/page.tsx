@@ -11,7 +11,7 @@ export default async function Home() {
   const formattedData = transformCarData(data);
 
   return (
-    <main className="container mx-auto py-10 bg-zinc-900 text-zinc-50">
+    <main className="container mx-auto py-10">
       <DataTable columns={columns} data={formattedData} />
     </main>
   );

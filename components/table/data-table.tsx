@@ -573,6 +573,7 @@ export default function DataTable<TData, TValue>({
                           alt="BMW logo"
                           width={18}
                           height={18}
+                          className="bg-black rounded-full"
                         />
                         Mercedes-Benz {MERCEDES_BENZ.length}
                       </div>
