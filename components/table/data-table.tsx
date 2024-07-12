@@ -157,44 +157,68 @@ export default function DataTable<TData, TValue>({
           <div className="flex flex-col max-h-screen">
             <div className="flex-grow overflow-auto rounded-md border">
               <Table className="relative w-full">
-                <TableHeader>
+                <TableHeader className="bg-green-200">
                   <TableRow className="!bg-white border-b">
-                    <TableHead className="z-10 sticky top-0 bg-white">
+                    <TableHead className="z-10 sticky top-0 bg-green-200">
                       BMW {BMW_DATA.length}
                     </TableHead>
-                    <TableHead className="z-10 sticky top-0 bg-white">
+                    <TableHead className="z-10 sticky top-0 bg-green-200">
                       Monthly
                     </TableHead>
+                    <TableHead className="z-10 sticky top-0 bg-green-200"></TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
-                  {BMW_DATA.map((item, key) => (
-                    <TableRow key={key}>
-                      {/* <TableCell className="text-xs">{item.star}</TableCell> */}
-                      <TableCell className="text-xs">{item.title}</TableCell>
-                      <TableCell className="text-xs">{item.monthly}</TableCell>
-                    </TableRow>
-                  ))}
-                  {table?.getRowModel().rows?.length ? (
-                    table?.getRowModel().rows.map((row) => (
-                      <TableRow
-                        key={row.id}
-                        data-state={row.getIsSelected() && "selected"}
-                      >
-                        {row.getVisibleCells().map((cell) => (
-                          <TableCell className="text-xs" key={cell.id}>
-                            {flexRender(
-                              cell.column.columnDef.cell,
-                              cell.getContext()
-                            )}
-                          </TableCell>
-                        ))}
+                  {BMW_DATA.length ? (
+                    BMW_DATA.map((item, key) => (
+                      <TableRow key={key}>
+                        {/* <TableCell className="text-xs">{item.star}</TableCell> */}
+                        <TableCell className="text-xs">{item.title}</TableCell>
+                        <TableCell className="text-xs">
+                          {item.monthly}
+                        </TableCell>
+                        <TableCell className="text-xs"></TableCell>
                       </TableRow>
                     ))
                   ) : (
                     <TableRow>
                       <TableCell
-                        colSpan={columns.length}
+                        colSpan={BMW_DATA.length}
+                        className="h-24 text-center"
+                      >
+                        No results.
+                      </TableCell>
+                    </TableRow>
+                  )}
+                </TableBody>
+                <TableHeader className="bg-red-200">
+                  <TableRow className="!bg-white border-b">
+                    <TableHead className="z-10 sticky top-0 bg-red-200">
+                      Mercedes-Benz {BMW_DATA.length}
+                    </TableHead>
+                    <TableHead className="z-10 sticky top-0 bg-red-200">
+                      Drive Of
+                    </TableHead>
+                    <TableHead className="z-10 sticky top-0 bg-red-200">
+                      Monthly
+                    </TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {BMW_DATA.length ? (
+                    BMW_DATA.map((item, key) => (
+                      <TableRow key={key}>
+                        {/* <TableCell className="text-xs">{item.star}</TableCell> */}
+                        <TableCell className="text-xs">{item.title}</TableCell>
+                        <TableCell className="text-xs">
+                          {item.monthly}
+                        </TableCell>
+                      </TableRow>
+                    ))
+                  ) : (
+                    <TableRow>
+                      <TableCell
+                        colSpan={BMW_DATA.length}
                         className="h-24 text-center"
                       >
                         No results.
