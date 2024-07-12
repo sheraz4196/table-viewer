@@ -1,7 +1,5 @@
 "use client";
 import * as React from "react";
-import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
-
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -490,14 +488,6 @@ export default function DataTable<TData, TValue>({
               <ListFilter className="size-6" />
               <span>Filter</span>
             </button>
-            <Drawer direction="left">
-              <DrawerTrigger>
-                <SlidersHorizontal />
-              </DrawerTrigger>
-              <DrawerContent className="!w-1/2 h-screen rounded-none fixed overflow-hidden overflow-y-auto flex items-center">
-                <Sidebar />
-              </DrawerContent>
-            </Drawer>
           </div>
 
           <div className="flex flex-col max-h-screen">
