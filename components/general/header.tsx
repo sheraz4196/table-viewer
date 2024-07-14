@@ -16,8 +16,14 @@ export default function Header() {
     <header className="p-6 flex items-center justify-between border-b">
       <div className="px-4 flex items-center gap-3">
         <Drawer direction="left">
-          <DrawerTrigger>
-            <SlidersHorizontal className="size-4" />
+          <DrawerTrigger className="lg:hidden">
+            <Image
+              src={"/sidebar.png"}
+              alt="sidebar"
+              width={18}
+              height={18}
+              className=" brightness-0 dark:brightness-100"
+            />
           </DrawerTrigger>
 
           <DrawerContent className="!w-1/2 h-screen rounded-none fixed overflow-hidden overflow-y-auto flex items-center">
