@@ -16,13 +16,13 @@ export default function Sidebar() {
   const [hotDeals, setHotDeals] = useState(true);
   const { theme } = useTheme();
   return (
-    <div className="flex items-center justify-center w-72 relative pt-16">
+    <div className="flex items-center justify-center w-72 relative py-16">
       <div className="flex flex-col gap-1.5 px-4">
         <div className="flex items-center p-2">
           <Logo />
           <ThemeToggle />
         </div>
-        <div className="flex flex-col gap-6 p-2">
+        <div className="flex flex-col gap-3 p-2">
           <button
             className="flex items-center gap-3 text-xs border-none !px-0"
             type="button"
@@ -140,7 +140,7 @@ export default function Sidebar() {
           {openFavorite && (
             <button
               type="button"
-              className="flex items-center gap-3 text-xs border-none bg-[#efefef] dark:bg-zinc-600/70 px-4 py-2 rounded-[4px]"
+              className="flex items-center gap-3 text-xs border-none bg-[#efefef] dark:bg-zinc-600/70 px-4 py-2 rounded-[4px] font-semibold"
             >
               <Image
                 src={"/icons/list.png"}
@@ -171,7 +171,7 @@ export default function Sidebar() {
             <>
               <button
                 type="button"
-                className="flex items-center gap-3 text-xs border-none !px-0"
+                className="flex items-center gap-3 text-xs border-none !px-0 font-semibold"
                 onClick={() => setHotDeals(!hotDeals)}
               >
                 <Image
