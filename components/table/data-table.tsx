@@ -485,8 +485,12 @@ export default function DataTable<TData, TValue>({
           </div> */}
           <div className="flex lg:hidden items-center justify-between py-4">
             <button type="button" className="flex items-center gap-4">
-              <ListFilter className="size-6" />
-              <span>Filter</span>
+              <ListFilter width={18} height={18} />
+              <span className="text-xs">Filter</span>
+            </button>
+            <button type="button">
+              <SlidersHorizontal height={18} width={18} />
+              <span className="sr-only">List Filter Icon</span>
             </button>
           </div>
 
