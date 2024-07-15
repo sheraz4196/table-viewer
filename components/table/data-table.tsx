@@ -533,7 +533,7 @@ export default function DataTable<TData, TValue>({
                             <p>{item.title}</p>
                           </div>
                         </TableCell>
-                        <TableCell className="text-xs w-2">
+                        <TableCell className="text-xs">
                           {item.monthly}
                         </TableCell>
                       </TableRow>
@@ -590,10 +590,10 @@ export default function DataTable<TData, TValue>({
                           />
                           <p>{item.title}</p>
                         </TableCell>
-                        <TableCell className="text-xs w-2">
+                        <TableCell className="text-xs">
                           {item.drive_off}
                         </TableCell>
-                        <TableCell className="text-xs w-2">
+                        <TableCell className="text-xs">
                           {item.monthly}
                         </TableCell>
                       </TableRow>
