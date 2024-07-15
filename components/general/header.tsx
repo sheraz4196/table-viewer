@@ -13,17 +13,8 @@ import { PanelRight, SlidersHorizontal } from "lucide-react";
 export default function Header() {
   const { theme } = useTheme();
   return (
-    <header className="p-6 flex items-center justify-between border-b">
+    <header className="py-2 px-4 flex items-center justify-between border-b">
       <div className="px-4 flex items-center gap-3">
-        <Drawer direction="left">
-          <DrawerTrigger className="lg:hidden self-start">
-            <PanelRight className="size-3" />
-          </DrawerTrigger>
-
-          <DrawerContent className="!w-1/2 h-screen rounded-none fixed overflow-hidden overflow-y-auto flex items-center">
-            <Sidebar />
-          </DrawerContent>
-        </Drawer>
         {theme === "dark" ? (
           <Image
             src={`/logo-white.png`}
@@ -34,6 +25,17 @@ export default function Header() {
         ) : (
           <Image src={`/logo.png`} alt="Site Logo" width={142} height={17} />
         )}
+      </div>
+      <div className="lg:hidden flex gap-2">
+        <span className="border" />
+        <Drawer direction="left">
+          <DrawerTrigger className="lg:hidden self-start p-1">
+            <PanelRight height={18} width={18} />
+          </DrawerTrigger>
+          <DrawerContent className="!w-1/2 h-screen rounded-none fixed overflow-hidden overflow-y-auto flex items-center">
+            <Sidebar />
+          </DrawerContent>
+        </Drawer>
       </div>
       <ThemeToggle />
     </header>
