@@ -484,7 +484,7 @@ export default function DataTable<TData, TValue>({
             </DropdownMenu>
           </div> */}
           <div className="flex lg:hidden items-center justify-between py-4">
-            <button type="button" className="flex items-center gap-4">
+            <button type="button" className="flex items-center gap-4 ">
               <ListFilter width={18} height={18} />
               <span className="text-xs">Filter</span>
             </button>

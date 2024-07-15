@@ -140,7 +140,7 @@ export default function Sidebar() {
           {openFavorite && (
             <button
               type="button"
-              className="flex items-center gap-3 text-xs border-none bg-[#efefef] dark:bg-zinc-600/70 px-4 py-2 rounded-sm"
+              className="flex items-center gap-3 text-xs border-none bg-[#efefef] dark:bg-zinc-600/70 px-4 py-2 rounded-[4px]"
             >
               <Image
                 src={"/icons/list.png"}
@@ -181,15 +181,19 @@ export default function Sidebar() {
                   alt="Icon"
                 />
                 HOT DEALS
-                <Lock className="size-4 text-zinc-600" />
-                <ChevronDown
-                  className={cn(hotDeals ? "size-3" : "-rotate-90 size-3")}
+                <Lock className="fill-[#9D9D9F]" width={8} height={19} />
+                <Image
+                  src={"/icons/chev-down.png"}
+                  width={6}
+                  height={6}
+                  alt="Icon"
+                  className={cn(hotDeals ? "" : "-rotate-90")}
                 />
               </button>
 
               {hotDeals && (
                 <button
-                  className="flex items-center gap-3 text-xs border-none ml-6 bg-[#efefef] dark:bg-zinc-600/70 px-4 py-2 rounded-sm"
+                  className="flex items-center gap-3 text-xs border-none bg-[#EFEFEF] dark:bg-zinc-600/70 px-4 py-2 rounded-[4px]"
                   type="button"
                 >
                   <Image

@@ -6,7 +6,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import Sidebar from "../siderbar/sidebar";
-import { PanelRight, SlidersHorizontal } from "lucide-react";
+import { PanelRight } from "lucide-react";
 import Logo from "../logo";
 export default function Header() {
   return (
