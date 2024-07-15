@@ -525,8 +525,8 @@ export default function DataTable<TData, TValue>({
                   {BMW_DATA.length ? (
                     BMW_DATA.map((item, key) => (
                       <TableRow key={key}>
-                        <TableCell colSpan={2} className="text-xs ">
-                          <div className="flex items-center gap-2 col-span-2">
+                        <TableCell colSpan={2} className="text-xs">
+                          <div className="flex items-center gap-2">
                             {item.icon}
                             <Image
                               src={"/bmw.png"}
