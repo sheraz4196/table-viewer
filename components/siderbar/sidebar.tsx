@@ -18,7 +18,7 @@ export default function Sidebar() {
   return (
     <div className="flex items-center justify-center w-72 relative py-16">
       <div className="flex flex-col gap-1.5 px-4">
-        <div className="flex items-center p-2">
+        <div className="flex items-center gap-6 p-2">
           <Logo />
           <ThemeToggle className="w-6 h-6 p-1" />
         </div>
