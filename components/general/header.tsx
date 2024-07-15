@@ -10,7 +10,7 @@ import { PanelRight, SlidersHorizontal } from "lucide-react";
 import Logo from "../logo";
 export default function Header() {
   return (
-    <header className="py-2 px-4 flex items-center justify-between border-b">
+    <header className="py-2 px-4 flex items-center justify-between border-b h-10 lg:h-auto">
       <div className="px-4 flex items-center gap-3">
         <Logo />
       </div>
