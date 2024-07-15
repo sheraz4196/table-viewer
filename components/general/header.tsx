@@ -20,7 +20,7 @@ export default function Header() {
           <DrawerTrigger className="lg:hidden self-start p-1">
             <PanelRight height={18} width={18} />
           </DrawerTrigger>
-          <DrawerContent className="!w-2/3 h-screen rounded-none fixed overflow-hidden overflow-y-auto flex items-center">
+          <DrawerContent className="!w-1/2 h-screen rounded-none fixed overflow-hidden overflow-y-auto flex items-center">
             <Sidebar />
           </DrawerContent>
         </Drawer>

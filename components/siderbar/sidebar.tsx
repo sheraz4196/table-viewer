@@ -20,7 +20,7 @@ export default function Sidebar() {
       <div className="flex flex-col gap-1.5 px-4">
         <div className="flex items-center p-2">
           <Logo />
-          <ThemeToggle />
+          <ThemeToggle className="w-6 h-6 p-1" />
         </div>
         <div className="flex flex-col gap-3 p-2">
           <button
