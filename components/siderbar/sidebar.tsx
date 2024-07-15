@@ -240,7 +240,7 @@ export default function Sidebar() {
             </>
           )}
         </div>
-        <div className="flex flex-col gap-3 p-2 mt-6">
+        <div className="flex flex-col gap-3 p-2 my-6">
           <button
             className="flex items-center gap-3 text-xs border-none !px-0"
             type="button"
@@ -270,14 +270,12 @@ export default function Sidebar() {
             </>
           )}
         </div>
+        <div className="py-2.5">
+          <Button className="rounded-full" variant={"outline"} size={"icon"}>
+            ?
+          </Button>
+        </div>
       </div>
-      <Button
-        className="rounded-full fixed bottom-12 left-6"
-        variant={"outline"}
-        size={"icon"}
-      >
-        ?
-      </Button>
     </div>
   );
 }
