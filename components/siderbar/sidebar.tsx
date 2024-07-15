@@ -5,6 +5,7 @@ import { Button } from "../ui/button";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
+import Logo from "../logo";
 
 export default function Sidebar() {
   const [openFavorite, setOpenFavorite] = useState(true);
@@ -17,16 +18,7 @@ export default function Sidebar() {
     <div className="flex items-center justify-center w-56 relative pt-16">
       <div className="flex flex-col gap-1.5 px-4">
         <div className="p-2">
-          {theme === "dark" ? (
-            <Image
-              src={`/logo-white.png`}
-              alt="Site Logo"
-              width={142}
-              height={17}
-            />
-          ) : (
-            <Image src={`/logo.png`} alt="Site Logo" width={142} height={17} />
-          )}
+          <Logo />
         </div>
         <div className="flex flex-col gap-6 p-2">
           <button

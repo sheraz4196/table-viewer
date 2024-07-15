@@ -10,21 +10,13 @@ import {
 import Sidebar from "../siderbar/sidebar";
 import { useTheme } from "next-themes";
 import { PanelRight, SlidersHorizontal } from "lucide-react";
+import Logo from "../logo";
 export default function Header() {
   const { theme } = useTheme();
   return (
     <header className="py-2 px-4 flex items-center justify-between border-b">
       <div className="px-4 flex items-center gap-3">
-        {theme === "dark" ? (
-          <Image
-            src={`/logo-white.png`}
-            alt="Site Logo"
-            width={142}
-            height={17}
-          />
-        ) : (
-          <Image src={`/logo.png`} alt="Site Logo" width={142} height={17} />
-        )}
+        <Logo />
       </div>
       <div className="lg:hidden flex gap-2">
         <span className="border" />
