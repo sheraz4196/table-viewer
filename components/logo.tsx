@@ -5,6 +5,7 @@ export default function Logo() {
       height="17"
       viewBox="0 0 142 17"
       fill="none"
+      className="mt-1.5"
       xmlns="http://www.w3.org/2000/svg"
     >
       <mask
