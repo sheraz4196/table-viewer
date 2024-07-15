@@ -1,5 +1,3 @@
-"use client";
-import Image from "next/image";
 import ThemeToggle from "./themes-toogler";
 import {
   Drawer,
@@ -8,11 +6,9 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import Sidebar from "../siderbar/sidebar";
-import { useTheme } from "next-themes";
 import { PanelRight, SlidersHorizontal } from "lucide-react";
 import Logo from "../logo";
 export default function Header() {
-  const { theme } = useTheme();
   return (
     <header className="py-2 px-4 flex items-center justify-between border-b">
       <div className="px-4 flex items-center gap-3">
