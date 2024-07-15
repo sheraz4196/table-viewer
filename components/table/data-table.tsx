@@ -506,7 +506,10 @@ export default function DataTable<TData, TValue>({
                           width={18}
                           height={18}
                         />
-                        <p>BMW {BMW_DATA.length}</p>
+                        <p className="flex gap-2 items-center">
+                          BMW
+                          <span>{BMW_DATA.length}</span>
+                        </p>
                       </div>
                     </TableHead>
                     <TableHead className="z-10 sticky top-0 bg-[#ECECEC] dark:bg-[#17181A]">
@@ -557,7 +560,10 @@ export default function DataTable<TData, TValue>({
                           height={18}
                           className="bg-black rounded-full"
                         />
-                        Mercedes-Benz {MERCEDES_BENZ.length}
+                        <p className="flex items-center gap-2">
+                          Mercedes-Benz
+                          <span>{MERCEDES_BENZ.length}</span>
+                        </p>
                       </div>
                     </TableHead>
                     <TableHead className="z-10 sticky top-0 bg-[#ECECEC] dark:bg-[#17181A]">
