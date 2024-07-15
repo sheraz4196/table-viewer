@@ -495,7 +495,10 @@ export default function DataTable<TData, TValue>({
               <Table className="relative w-full">
                 <TableHeader>
                   <TableRow className="bg-[#ECECEC] dark:bg-[#17181A] border-b">
-                    <TableHead className="z-10 sticky top-0 bg-[#ECECEC] dark:bg-[#17181A]">
+                    <TableHead
+                      colSpan={2}
+                      className="z-10 sticky top-0 bg-[#ECECEC] dark:bg-[#17181A]"
+                    >
                       <div className="flex items-center gap-3">
                         <Image
                           src={"/bmw.png"}
@@ -509,27 +512,27 @@ export default function DataTable<TData, TValue>({
                     <TableHead className="z-10 sticky top-0 bg-[#ECECEC] dark:bg-[#17181A]">
                       Monthly
                     </TableHead>
-                    <TableHead className="z-10 sticky top-0 bg-[#ECECEC] dark:bg-[#17181A]"></TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   {BMW_DATA.length ? (
                     BMW_DATA.map((item, key) => (
                       <TableRow key={key}>
-                        <TableCell className="text-xs flex items-center gap-2">
-                          {item.icon}
-                          <Image
-                            src={"/bmw.png"}
-                            alt="BMW logo"
-                            width={18}
-                            height={18}
-                          />
-                          <p>{item.title}</p>
+                        <TableCell colSpan={2} className="text-xs ">
+                          <div className="flex items-center gap-2 col-span-2">
+                            {item.icon}
+                            <Image
+                              src={"/bmw.png"}
+                              alt="BMW logo"
+                              width={18}
+                              height={18}
+                            />
+                            <p>{item.title}</p>
+                          </div>
                         </TableCell>
-                        <TableCell className="text-xs">
+                        <TableCell className="text-xs" colSpan={1}>
                           {item.monthly}
                         </TableCell>
-                        <TableCell className="text-xs"></TableCell>
                       </TableRow>
                     ))
                   ) : (
