@@ -16,7 +16,7 @@ export default function Sidebar() {
   const [hotDeals, setHotDeals] = useState(true);
   const { theme } = useTheme();
   return (
-    <div className="flex items-center justify-center w-72 relative py-16">
+    <div className="flex items-center justify-center w-72 relative my-16">
       <div className="flex flex-col gap-1.5 px-4">
         <div className="flex items-center gap-6 p-2">
           <Logo />
